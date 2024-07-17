@@ -1,0 +1,10 @@
+#my_string = input('Введите произвольную строку здесь - ')
+my_string = 'I am required to complete the Python developer course.'
+print(my_string, 'Это оригинал строки -> ')
+print(len(my_string), ' - Это количество символов в строке')
+print(my_string.upper(),'Это строка в ВЕРХНЕМ регистре')
+print(my_string.lower(),'Это строка в нижнем регистре')
+print(my_string.replace(' ',''),'- Это строка без пробелов')
+print(my_string[0],'- Это первый символ в строке')
+print(my_string[-1],'- Это последний символ в строке')
+print(my_string.capitalize(),'- Это капитализация строки, но это не про экономику')
