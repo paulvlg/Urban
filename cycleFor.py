@@ -5,12 +5,12 @@ primes = []
 not_primes = []
 
 for i in numbers:
-  if i > 1:
-    for k in range(2, i):
-      if i % k == 0:
-        not_primes.append(i)
-        break
-    else:
-      primes.append(i)
+    if i > 1:
+        for k in range(2, i):
+            if i % k == 0:
+                not_primes.append(i)
+                break
+        else:
+            primes.append(i)
 print(primes)
 print(not_primes)
