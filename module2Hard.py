@@ -1,7 +1,5 @@
 def get_decode(number):
     pairs = []
-    number1 = 1
-    number2 = 1
     if number < 3:
         print("Выход без результата")
         return
@@ -15,6 +13,6 @@ def get_decode(number):
     return (decode)
 
 
-number = int(input("Введите число от 3 до 20, если менее 3 - выход"))
+number = int(input("Введите число от 3 до 20, если менее 3 - выход => "))
 result = get_decode(number)
 print(result)
