@@ -1,8 +1,8 @@
 def get_decode(number):
     pairs = []
-    #if number < 3:
-    #    print("Выход без результата")
-    #    return
+    if number < 3:
+        print("Выход без результата")
+        return
     for number1 in range(1, number + 1):
         decode = []
         for number2 in range(number1, number + 1):
