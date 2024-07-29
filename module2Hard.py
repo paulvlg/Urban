@@ -26,7 +26,7 @@ print(f"Результат-Сырец - {result}\n")
 string_result = ''.join(map(str, *result))
 print(f"Результат приведенный к строке без доп. знаков - {string_result}\n")
 check_result = result_dict.get(number) == string_result
-print(f"Проверка на результат с условием задачи - {result_dict.get(number)}, - {check_result}")
+print(f"Проверка на результат с условием задачи - {result_dict.get(number)} ==>> {check_result}")
 if check_result:
     print("Your bourbon is waiting for you!")
 else:
