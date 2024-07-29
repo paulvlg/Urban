@@ -6,7 +6,7 @@ def get_decode(number):
     for number1 in range(1, number + 1):
         decode = []
         for number2 in range(number1, number + 1):
-            if number1 == 1 and  number2 == 1:
+            if number1 == 1 and number2 == 1:
                 continue
             elif number % (number1 + number2) == 0:
                 pairs.append(number1)
