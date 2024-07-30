@@ -9,7 +9,7 @@ print(tuple_1)
 print(tuple_2)
 print(tuple_3)
 
-# Словарь набор пар данных - key : value в фигурных скобках
+# Словарь - набор пар данных - key : value в фигурных скобках
 dict_1 = {'Paul' : 1974, 'Elena' : 1977, 'Alexa' : [1998, 11]}# Value может быть списком
 print(dict_1)
 
