@@ -8,3 +8,11 @@ print(my_string.replace(' ',''),'- Это строка без пробелов')
 print(my_string[0],'- Это первый символ в строке')
 print(my_string[-1],'- Это последний символ в строке')
 print(my_string.capitalize(),'- Это капитализация строки, но это не про экономику')
+# some_string = "Intelligence is the ability to avoid doing work, but in such a way that it is done at the same time."
+# another_string = "Work"
+# #another_list = list(some_string.lower().split(" "))
+# another_list = list(some_string.lower().replace(",", "").split(" "))
+#
+# print(f'Count calls is - {calls}')
+# print(f'Summary data about some string is: {string_info(some_string)}')
+# print(f'Does string - {another_string} contain any list element : {str(is_contains(another_string))}')
