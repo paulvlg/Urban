@@ -16,3 +16,6 @@ print(my_string.capitalize(),'- Это капитализация строки, 
 # print(f'Count calls is - {calls}')
 # print(f'Summary data about some string is: {string_info(some_string)}')
 # print(f'Does string - {another_string} contain any list element : {str(is_contains(another_string))}')
+# send_email('Check email without at sign', 'mail#gmail.com')
+#send_email('Check validation email - without name', '@gmail.com', sender='g@gmail.com')
+#send_email('Check email address with comma against dot', 'a@gmail,com', sender='b@.ru')
