@@ -4,3 +4,4 @@ def divide(first, second):
     else:
         res_ = f'Результат деления: - {first / second}'
     return res_
+
