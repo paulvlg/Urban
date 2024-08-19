@@ -120,7 +120,7 @@ print(id(True))
 
 # hash() - значение хэша для объекта. Что такое хэш-функции см https://goo.gl/gZLM4o
 hash('Кржижановский')
-hash(profit)
+#hash(profit)
 
 # isinstance() - является ли объект объектом данного класса
 isinstance(profit, list)
@@ -129,7 +129,7 @@ isinstance(profit, list)
 type(profit)
 
 # open() - открыть файл на файловой системе
-ff = open('lesson_004/lecture_snippets/05_builtin.py', 'r')
+ff = open('/home/pault/Code_Projects/PythonProjects/Urban/module_3/Module_3_adds/05_builtin.py', 'r')
 for line in ff.readlines():
     print(line, end='')
 ff.close()
