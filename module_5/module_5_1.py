@@ -1,8 +1,3 @@
-from math import floor
-
-from module_1.variables import name_of_course
-
-
 class House:
     def __init__(self, name, floors):
         self.name = name
