@@ -1,6 +1,3 @@
-from typing import get_origin
-
-
 class House:
     def __init__(self, name, floors):
         self.name = name
