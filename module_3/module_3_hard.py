@@ -1,7 +1,7 @@
 def calculate_structure_sum(*args):
     total = 0
     for arg in args:
-        if isinstance(arg, list):
+        if isinstance(arg, (list, set, tuple)):
             for i in arg:
                 total += calculate_structure_sum(i)
         elif isinstance(arg, int):
@@ -9,15 +9,9 @@ def calculate_structure_sum(*args):
         elif isinstance(arg, dict):
             for key, value in arg.items():
                 total += calculate_structure_sum(key, value)
-        elif isinstance(arg, set):
-            for i in arg:
-                total += calculate_structure_sum(i)
         elif isinstance(arg, str):
             total += len(arg)
-        elif isinstance(arg, tuple):
-            for i in arg:
-                total += calculate_structure_sum(i)
-    return total
+        return total
 
 
 data_structure = [
