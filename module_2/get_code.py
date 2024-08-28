@@ -1,5 +1,4 @@
 def get_decode(number):
-    global decode
     pairs = []
     if number < 3:
         print("Выход без результата")
@@ -14,4 +13,3 @@ def get_decode(number):
                 continue
             decode.append(pairs)
     return decode
-
