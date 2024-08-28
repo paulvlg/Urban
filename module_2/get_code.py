@@ -13,3 +13,4 @@ def get_decode(number):
                 continue
             decode.append(pairs)
     return decode
+
