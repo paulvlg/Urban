@@ -15,7 +15,6 @@ class User:
         self.username = username
         if password == password_confirm:
             self.password = password
-\
 
 
 if __name__ == '__main__':
@@ -35,7 +34,9 @@ if __name__ == '__main__':
             if password != password2:
                 print("Password don`t match. Please try again.")
                 continue
+            else:
+                print("\n\tRegistration complete, user added.")
             database.add_user(user.username, user.password)
-            print(database.data)
+            print(f'Registered users is: {database.data}')
         else:
             exit('Exit program')
