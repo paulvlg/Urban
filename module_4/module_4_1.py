@@ -1,5 +1,5 @@
 from fake_math import divide as fm
-from module_4.true_math import divide as tm
+from true_math import divide as tm
 
 result1 = fm(69, 3)
 result2 = fm(3, 0)

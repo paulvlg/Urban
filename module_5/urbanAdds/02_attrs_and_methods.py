@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from xml.dom.minidom import TypeInfo
+
 
 # Атрибуты объекта-экземпляра не нужно описывать — как и переменные,
 # они начинают существование в момент первого присваивания
@@ -57,4 +59,4 @@ print(getattr(robot, 'weight'))
 print(getattr(robot, 'speed', 10))
 
 
-
+print(TypeInfo)

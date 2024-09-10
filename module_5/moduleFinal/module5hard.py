@@ -1,7 +1,3 @@
-import UrTube
-import User
-import Video
-
 ur = UrTube()
 v1 = Video('Лучший язык программирования 2024 года', 200)
 v2 = Video('Для чего девушкам парень программист?', 10, adult_mode=True)
