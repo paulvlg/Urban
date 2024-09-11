@@ -8,6 +8,14 @@ class Animal:
         cls.name = args[0]
         return obj
 
+    def eat(self, food):
+        if food.edible:
+            print(f'{self.name} съел {food.name}')
+            self.fed = True
+        else:
+            print(f'{self.name} не стал есть {food.name}')
+            self.alive = False
+
 
 class Plant:
     edible = False
@@ -20,42 +28,25 @@ class Plant:
 
 
 class Mammal(Animal):
-
-    def __int__(self, name):
-        self.name = name
-
-    def eat(self, food):
-        if food.edible:
-            print(f'{self.name} съел {food.name}')
-            self.fed = True
-        else:
-            print(f'{self.name} не стал есть {food.name}')
-            self.alive = False
+    def __str__(self):
+        return self.name
 
 
 class Predator(Animal):
-    def __int__(self, name):
-        self.name = name
-
-    def eat(self, food):
-        if food.edible:
-            print(f'{self.name} съел {food.name}')
-            self.fed = True
-        else:
-            print(f'{self.name} не стал есть {food.name}')
-            self.alive = False
+   def __str__(self):
+       return self.name
 
 
 class Flower(Plant):
-    def __int__(self, name):
-        self.name = name
+    def __str__(self):
+        return self.name
 
 
 class Fruit(Plant):
     edible = True
 
-    def __int__(self, name):
-        self.name = name
+    def __str__(self):
+        return self.name
 
 
 a1 = Predator('Волк с Уолл-Стрит')
