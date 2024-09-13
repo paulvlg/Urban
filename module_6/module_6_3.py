@@ -16,6 +16,7 @@ class Eagle:
     def fly(self, dy):
         self.y_distance += dy
 
+
 class Pegasus(Horse, Eagle):
     def __init__(self):
         super().__init__()
