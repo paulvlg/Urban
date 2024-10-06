@@ -2,41 +2,51 @@ import random
 
 user_wins = 0
 comp_wins = 0
+variants = ["камень", "ножницы", "бумага"]
 
-options = ["камень", "ножницы", "бумага"]
 
-print("Да начнется Игра!")
-while True:
-    user_input = input(str("Сделай свой выбор из 'Камень', 'Ножницы', 'Бумага' или"
-                           " '0 (ноль)' для выхода из игры\n")).lower()
-    if user_input == '0':
-        break
+def user_won():
+    global user_wins
+    print("Ты выиграл")
+    user_wins += 1
+    return
 
-    if user_input not in options:
-        continue
 
-    random_number = random.randint(0, 2)
+def game():
+    global user_wins, comp_wins, variants, user_choice
     # 0:Камень, 1: ножницы, 2: бумага
 
-    computer_pick = options[random_number]
-    print("Компьютер выкинул", computer_pick + ".")
+    random_number = random.randint(0, 2)
+    computer_pick = variants[random_number]
 
-    if user_input == computer_pick:
+    print("Компьютер выбрал - ", computer_pick + ".")
+
+    if user_choice == computer_pick:
         print("Снова по новой")
-        continue
-    elif user_input == "камень" and computer_pick == "ножницы":
-        print("Ты выиграл")
-        user_wins += 1
-    elif user_input == "ножницы" and computer_pick == "бумага":
-        print("Ты выиграл")
-        user_wins += 1
-    elif user_input == "бумага" and computer_pick == "камень":
-        print("Ты выиграл")
-        user_wins += 1
+        return user_wins, comp_wins
+    elif user_choice == "камень" and computer_pick == "ножницы":
+        user_won()
+    elif user_choice == "ножницы" and computer_pick == "бумага":
+        user_won()
+    elif user_choice == "бумага" and computer_pick == "камень":
+        user_won()
     else:
         print("Компьютер выиграл")
         comp_wins += 1
+    return user_wins, comp_wins
+
+
+print("Да начнется Игра!")
+while True:
+    user_choice = input(str("Сделай свой выбор из 'Камень', 'Ножницы', 'Бумага' или"
+                            " '0 (ноль)' для выхода из игры\n")).lower()
+    if user_choice == '0':
+        print("До встречи!")
+        break
+
+    if user_choice in variants:
+        game()
+
 
 print("Ты выиграл - %d" % user_wins)
-print("Компьютер выиграл - {}". format(comp_wins))
-
+print("Компьютер выиграл - {}".format(comp_wins))
